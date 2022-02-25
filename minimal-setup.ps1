@@ -1,3 +1,4 @@
+echo 'access successful'
 pause
 mkdir \home\user\.config\vim
 mkdir \home\user\.config\current
