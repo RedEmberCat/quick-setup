@@ -1,5 +1,4 @@
-mkdir \home\user\.config\vim
-mkdir \home\user\.config\current
+mkdir \home\user\.config
 mkdir \home\user\files
 mkdir \home\user\tmp
 mkdir \apps
@@ -12,6 +11,7 @@ $env:SCOOP='C:\apps\scoop'
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser
 iwr get.scoop.sh -UseBasicParsing | iex
 scoop install git
+git clone https://github.com/redembercat/.config \home\user\.config
 'source /c/home/user/.config/vim/vimfiles/_vimrc' | Out-File -encoding ascii -NoNewline -Append C:/apps/scoop/apps/git/current/etc/vimrc
 'source /c/home/user/.config/bash/bashrc' | Out-File -encoding ascii -NoNewline -Append C:/apps/scoop/apps/git/current/etc/bash.bashrc
 '$include /c/home/user/.config/bash/inputrc' | Out-File -encoding ascii -NoNewline -Append C:/apps/scoop/apps/git/current/etc/inputrc
