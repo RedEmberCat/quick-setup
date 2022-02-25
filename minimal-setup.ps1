@@ -1,3 +1,4 @@
+pause
 mkdir \home\user\.config
 mkdir \home\user\files
 mkdir \home\user\tmp
