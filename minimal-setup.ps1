@@ -3,6 +3,7 @@ pause
 mkdir \home\user\.config\vim
 mkdir \home\user\.config\current
 mkdir \home\user\files
+mkdir \home\user\tmp
 mkdir \apps
 mkdir \home\user\docs\backup/vim/auxfiles/backups/
 mkdir \home\user\docs\backup/vim/auxfiles/swaps/
@@ -30,6 +31,7 @@ scoop install git
 'Scrollbar=none' | Out-File -encoding ascii -Append C:/apps/scoop/apps/git/current/etc/minttyrc
 'Window=max' | Out-File -encoding ascii -NoNewline -Append C:/apps/scoop/apps/git/current/etc/minttyrc
 scoop install python
+Invoke-WebRequest https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt -Outfile C:\home\user\tmp\words.txt
 python -m pip install pyautogui
 setx PYTHONIOENCODING utf-8
 scoop bucket add extras
